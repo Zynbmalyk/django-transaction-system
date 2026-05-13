@@ -1,0 +1,8 @@
+[
+  {
+    "transaction_type": "DEPOSIT",
+    "source_account": "3",
+    "target_account": "2",
+    "amount": 500
+  }
+]
