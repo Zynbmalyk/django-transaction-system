@@ -1,10 +1,16 @@
 from django.shortcuts import render
+
+# Create your views here.
+from django.shortcuts import render
 from django.http import JsonResponse
 from django.views import View
-from .models import User, BankAccount, Transaction
+from users.models import User
+from accounts.models import BankAccount
+from transactions.models import Transaction
 from django.views.generic import ListView
 import time
 from django.utils.decorators import method_decorator
+from accounts.services import AccountService
 
 # Create your views here.
 
@@ -38,24 +44,29 @@ from django.utils.decorators import method_decorator
 # @method_decorator(log_file , name='dispatch')
 class AccountApiView(View):
     def get(self, request, account_number):
-        try:
-            account = BankAccount.objects.get(account_number=account_number)
-            data = {
-                'user': account.user.name,
-                'account_number': account.account_number,
-                'balance': str(account.balance),
-                'is_active': account.is_active
-            }
+      try:
+            data = AccountService.get_account_data(
+                account_number
+            )
+
             return JsonResponse(data)
-        except BankAccount.DoesNotExist:
-            return JsonResponse({'error': 'Account not found'}, status=404)
+
+      except BankAccount.DoesNotExist:
+
+            return JsonResponse(
+                {'error': 'Account not found'},
+                status=404
+            )
         
-# @method_decorator(decorators)
-# @method_decorator(log_file)
+# # @method_decorator(decorators)
+# # @method_decorator(log_file)
+
+
 class AccountListView(ListView):
     model = BankAccount
     template_name = 'account_list.html'
     context_object_name = 'accounts'
-
-    ordering = ['-balance']
+    
+    # def get_queryset(self):
+    #     return BankAccount.objects.order_by('-balance')
 
