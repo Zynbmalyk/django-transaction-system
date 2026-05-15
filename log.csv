@@ -1,0 +1,12 @@
+2026-05-12 18:10:45.480951 , wrapper , <django.db.models.query_utils.DeferredAttribute object at 0x0000024162D61580> , <django.db.models.query_utils.DeferredAttribute object at 0x0000024162ECBA70> 
+ 2026-05-12 18:12:40.196401 , BankAccount , <django.db.models.query_utils.DeferredAttribute object at 0x00000202F2DFB9B0> , <django.db.models.query_utils.DeferredAttribute object at 0x00000202F2D71790> 
+ 2026-05-12 18:18:09.383405 , BankAccount , <django.db.models.query_utils.DeferredAttribute object at 0x00000185912DB9B0> , <django.db.models.query_utils.DeferredAttribute object at 0x0000018591251790> 
+ 2026-05-12 18:20:01.496366 , wrapper , <django.db.models.query_utils.DeferredAttribute object at 0x000001EB715FB9B0> , <django.db.models.query_utils.DeferredAttribute object at 0x000001EB71571790> 
+ 2026-05-12 18:22:24.553749 , handle , <django.db.models.query_utils.DeferredAttribute object at 0x000001AD65BAB9B0> , <django.db.models.query_utils.DeferredAttribute object at 0x000001AD65B21790> 
+ 2026-05-12 18:27:31.170236 , Command , <django.db.models.query_utils.DeferredAttribute object at 0x000002E2FE5CB9B0> , <django.db.models.query_utils.DeferredAttribute object at 0x000002E2FE541790> 
+ 2026-05-12 18:35:51.262528 , Command , <django.db.models.query_utils.DeferredAttribute object at 0x000002115712B9B0> , <django.db.models.query_utils.DeferredAttribute object at 0x00000211570A1790> 
+ 2026-05-12 18:36:44.706961 , Command , <django.db.models.query_utils.DeferredAttribute object at 0x000001B90D64B9B0> , <django.db.models.query_utils.DeferredAttribute object at 0x000001B90D5C1790> 
+ 2026-05-13 12:26:33.705494 , Command , <django.db.models.query_utils.DeferredAttribute object at 0x0000016DE406B9B0> , <django.db.models.query_utils.DeferredAttribute object at 0x0000016DE3FB0740> 
+ 2026-05-13 18:35:55.767754 , Command , <django.db.models.query_utils.DeferredAttribute object at 0x0000018602410B90> , <django.db.models.query_utils.DeferredAttribute object at 0x0000018602410BC0> 
+ 2026-05-14 18:30:35.412217 , Command , <django.db.models.query_utils.DeferredAttribute object at 0x00000209E0F9B410> , <django.db.models.query_utils.DeferredAttribute object at 0x00000209E0E0C740> 
+ 

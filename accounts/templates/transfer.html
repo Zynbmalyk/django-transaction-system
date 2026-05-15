@@ -1,0 +1,27 @@
+<h1> Transfer Money </h1>
+<form method="POST">
+    {% csrf_token %}
+    <label for="from_account">From Account:</label>
+    <select name="from_account" id="from_account">
+        {% for account in accounts %}
+            <option value="{{ account.id }}">{{ account.account_number }} - {{ account.account_type }}</option>
+        {% endfor %}
+    </select>
+
+    <br>
+
+    <label for="to_account">To Account:</label>
+    <select name="to_account" id="to_account">
+        {% for account in accounts %}
+            <option value="{{ account.id }}">{{ account.account_number }} - {{ account.account_type }}</option>
+        {% endfor %}
+    </select>
+
+    <br>
+
+    <label for="amount">Amount:</label>
+    <input type="number" name="amount" id="amount" required>
+
+    <br>
+
+    <button type="submit">Transfer</button>
